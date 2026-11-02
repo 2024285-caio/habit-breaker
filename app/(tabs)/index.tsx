@@ -118,6 +118,7 @@ export default function HabitBreakerScreen() {
     <ScrollView contentContainerStyle={styles.page} keyboardShouldPersistTaps="handled">
       <Text style={styles.title}>{data ? 'Editar configuração' : 'Vamos começar 🚭'}</Text>
       <Text style={styles.subtitle}>Esses valores ajudam a comparar seu consumo e estimar seus gastos.</Text>
+      <Text style={styles.note}>Seus registros ficam neste aparelho, sem criptografia adicional do aplicativo. Eles não são sincronizados com uma conta.</Text>
       <Text style={styles.label}>Quantos cigarros você fumava por dia, em média?</Text>
       <TextInput accessibilityLabel="Consumo inicial por dia" style={styles.input} keyboardType="decimal-pad" placeholder="Ex.: 20" value={baseline} onChangeText={setBaseline} />
       <Text style={styles.label}>Quantos cigarros há em cada maço?</Text>
