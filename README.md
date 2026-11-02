@@ -4,15 +4,16 @@ Protótipo de aplicativo para ajudar pessoas a entender os gastos associados a h
 
 ## O que já existe
 
-- Tela de boas-vindas e seleção de um hábito, incluindo cigarro.
-- Formulário para informar consumo diário e preço por unidade.
-- Estimativa de gastos diários, semanais, mensais e anuais, apresentada em um alerta.
+- Configuração do consumo inicial, quantidade de cigarros por maço e preço do maço.
+- Registro e correção do consumo diário, com histórico dos últimos sete dias registrados.
+- Comparação com o consumo inicial, saldo diário e estimativa do gasto mensal com base nos cigarros registrados.
+- Dados salvos localmente no dispositivo.
 
 ## Situação atual
 
-O aplicativo é um protótipo inicial: os dados não são salvos e o acompanhamento de progresso ainda não foi implementado. Os exemplos do formulário precisam ser ajustados para distinguir corretamente o preço de um maço do preço de cada cigarro. A navegação ainda inclui telas de exemplo do Expo.
+O aplicativo é um protótipo inicial. O saldo diário compara o consumo registrado com a referência inicial e pode ser negativo. O gasto mensal é calculado apenas pelos cigarros registrados no mês, usando o preço atual configurado; dias sem registro não entram no total. Alterações na configuração recalculam as estimativas com os novos valores.
 
-A verificação de tipos identificou erros em componentes de navegação e ícones. O fluxo foi aberto no navegador, mas a versão Android ainda precisa ser testada em um aparelho.
+O fluxo original foi aberto no navegador, mas a versão Android ainda precisa ser testada em um aparelho.
 
 ## Tecnologias
 
@@ -33,10 +34,8 @@ Abra no navegador o endereço mostrado no terminal. Para iniciar o Expo e ver as
 
 ## Próximos passos
 
-- Corrigir os erros de tipos e revisar as dependências.
-- Ajustar os cálculos de acordo com a unidade de consumo e o preço do maço.
-- Salvar os dados no aparelho e permitir que sejam editados.
-- Criar acompanhamento de consumo, metas de redução e economia estimada.
+- Revisar as dependências e corrigir os problemas identificados.
+- Criar metas de redução e ampliar o acompanhamento do histórico.
 - Substituir as telas de exemplo e testar o aplicativo no Android.
 
 As funcionalidades planejadas ainda não estão disponíveis. Este projeto não substitui orientação profissional de saúde.
